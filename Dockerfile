@@ -12,7 +12,7 @@ RUN update-ca-certificates
 RUN apt-get -y autoremove
 RUN git config --global http.sslverify false
 
-# Install pinchesAndCacti
+# Install kentUtils
 ENV INSTALL_DIR "/opt/programs"
 RUN mkdir -p ${INSTALL_DIR}
 WORKDIR ${INSTALL_DIR}
